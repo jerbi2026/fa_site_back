@@ -27,4 +27,9 @@ public class controller {
 
     }
 
+    @DeleteMapping("/v3/{email}")
+    public void delete_contact(@PathVariable String email){
+        service.delete_contact(email);
+    }
+
 }
